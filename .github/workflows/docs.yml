@@ -24,9 +24,6 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-    - name: Install Protoc
-      uses: arduino/setup-protoc@v1
-
     - uses: actions/cache@v2
       with:
         path: ${{ env.pythonLocation }}
